@@ -35,6 +35,7 @@ clf.fit(features_train, labels_train)
 print "training time:", round(time()-t0, 3), "s"
 #t1 = time()
 pred = clf.predict(features_test)
+##print pred[10]," ",pred[26]," ",pred[50]
 count = 0
 for p in pred:
     if p == 1:
